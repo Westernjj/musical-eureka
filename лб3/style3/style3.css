@@ -1,0 +1,34 @@
+body {
+    font-family: Verdana, sans-serif;
+    background-image: url('../images/bg_body.png');
+    background-repeat: repeat-x;
+    background-color: #97BDE1;
+}
+h1 {
+    color: mediumblue;
+    padding-top: 60px;
+    font-size: 60px;
+}
+.intro {
+    color: mediumblue;
+    padding: 0;
+}
+h2 {
+    background-image: url('/images/bg_h2.png');
+    background-size: 39px;
+    background-repeat: no-repeat;
+    padding-left: 69px;
+    color: #285ef6;
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+}
+p {
+    padding-left: 69px;
+}
+pre {
+    color: #36568d;
+}
+address {
+    color: black;
+    text-align: center;
+}

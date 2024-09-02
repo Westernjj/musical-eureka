@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблиця</title>
+</head>
+<body>
+    <h1>Таблиці та форми</h1>
+    <h2>Таблиці</h2>
+    <table border="1">
+        <caption>Статистика продажу автомобілів</caption>
+        <thead align="center">
+            <tr>
+                <td rowspan="2">Марка автомобіля</td>
+                <td colspan="3">1-квартал</td>
+            </tr>
+            <tr>
+                <td>Січень</td>
+                <td>Лютий</td>
+                <td>Березень</td>
+            </tr>
+        <thead>
+        <tbody align="center">
+            <tr>
+                <td>Toyota</td>
+                <td>270000</td>
+                <td>250000</td>
+                <td>300000</td>
+            </tr>
+            <tr>
+                <td>Volkswagen</td>
+                <td>250000</td>
+                <td>200000</td>
+                <td>270000</td>
+            </tr>
+            <tr>
+                <td>Renault-Nissan </td>
+                <td>130000</td>
+                <td>150000</td>
+                <td>200000</td>
+            </tr>
+            <tr>
+                <td>Всього</td>
+                <td>650000</td>
+                <td>600000</td>
+                <td>770000</td>
+            </tr>
+        </tbody>
+
+    </table>
+    <table border="1">
+        <caption>Розклад занять</caption>
+        <thead align="center">
+            <tr>
+                <td rowspan="2">День тижня</td>
+                <td rowspan="2">Академічні години</td>
+                <td colspan="3">Шифр групи</td>
+            </tr>
+
+            <tr>
+                <td>КН-2.01</td>
+                <td>КН-2.02</td>
+                <td>КН-2.03</td>
+            </tr>
+        <thead>
+        <tbody align="center">
+            <tr>
+                <td rowspan="5">Понеділок</td>
+            </tr>
+            <tr>
+                <td>8.00-9.20</td>
+                <td colspan="3">Веб-технологіїта веб-дизайн</td>
+            </tr>
+            <tr>
+                <td>9.35-10.55</td>
+                <td>Об'єктно-орієнтоване програмування </td>
+                <td>Комп'ютерна дискретна математика </td>
+                <td>Теорія алгоритмів</td>
+            </tr>
+            <tr>
+                <td>9.35-10.55</td>
+                <td colspan="3">Теорія алгоритмів </td>
+            </tr>
+            <tr>
+                <td>12.45-14.05</td>
+                <td>Комп'ютерна дискретна математика</td>
+                <td>Теорія алгоритмів</td>
+                <td>Об'єктно-орієнтоване програмування</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Авторизація на сайті</h2>
+    <form action="login" method="POST">
+        <hr>
+        <input type="email" placeholder="Логін"><br>
+        <input type="password" placeholder="Введіть пароль"><br>
+        <a href="forgot_password">Забули пароль?</a><br>
+        <input type="submit" value="Увійти"><br>
+        <hr>
+        <label>Ім'я</label><br>
+        <input type="text" /><br>
+        <label>Email</label> <br>
+        <input type="email" placeholder="example@gmail.com" /> <br>
+        <label>Номер телефону</label> <br>
+        <input type="text" placeholder="+380696969" /> <br>
+        <input type="checkbox" />
+        <label>Простий спосіб побачити обов'язкові для заповнення поля</label> <br>
+        <hr>
+        <input type="text" placeholder="Ваше ім'я"><br>
+        <input type="email" placeholder="Ваш email"><br>
+        <input type="text" placeholder="Ваш телефон"><br>
+        <input type="password" placeholder="Пароль"><br>
+        <input type="password" placeholder="Підтвердіть пароль"><br>
+        <input type="submit" value="Реєстрація"><br>
+    </form>  
+    <hr>
+    <form>
+        <label>Bug title</label> <input type="text" /><br>
+        <label>Issue dascription</label> <input type="text" /><br>
+        <label>Operating system</label>
+        <select name="operating-system">
+            <option value="Windows">Windows</option>
+            <option value="macOS">macOS</option>
+            <option value="Linux">Linux</option>
+        </select><br>
+        <label>Browser</label>
+        <input type="radio" value="internet explorer"> Internet Explorer
+        <input type="radio" value="chrome"> Chrome
+        <input type="radio" value="firefox"> Firefox
+        <input type="radio" value="safari"> Safari
+        <input type="radio" value="opera"> Opera
+        <input type="radio" value="other"> Other  <input type="text"><br>
+        <label>Assignet to</label>
+        <select name="operating-system">
+            <option value="Мені">Мені</option>
+            <option value="Тобі">Тобі</option>
+            <option value="Йому">Йому</option>
+        </select><br>
+        <label>Приорітет:</label>
+        <select name="priority" required>
+            <option value="1">Низький</option>
+            <option value="2">Середній</option>
+            <option value="3">Високий</option>
+        </select><br>
+        <label>Screenshot</label>
+        <input type="file"><br>
+        <label>Status</label>
+        <select name="operating-system">
+            <option value="4">Швидко</option>
+            <option value="5">Повільно</option>
+            <option value="6">Стандартно</option>
+        </select><br>
+        <input type="submit" value="Submit"><br>
+    </form>
+</body>
+ 
+</html>
